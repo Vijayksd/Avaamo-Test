@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+ <listeners>
+		<listener class-name="com.ira.utility.TestListener" />
+	</listeners>
+  <parameter name="browserType" value="chrome" />
+	<parameter name="appURL" value="https://c6.avaamo.com/web_channels/444588bc-92fe-477f-87c1-88a92946346a/demo.html?theme=avm-messenger&amp;banner=true&amp;demo=true&amp;banner_text=%20&amp;banner_title=This%20is%20how%20the%20chat%20agent%20shows%20up/" />
+	<test thread-count="8" name="Test">
+		<classes>
+      <class name="com.ira.verifytest.IRA_Test"/>
+      <!-- <class name="IRA_BOT.AppTest"/> -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
